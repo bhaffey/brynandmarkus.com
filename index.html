@@ -1,0 +1,427 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!-- CSS -->
+	  	<link rel="stylesheet" href="css/reveal.css">	
+        <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/reveal_mobile.css" />
+	  	
+		<!-- Attach necessary scripts -->
+		 <!--<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="js/jquery.reveal.js"></script>
+
+<link href="css/style262.css" rel="stylesheet" type="text/css">
+
+<link href="css/custommain.css" rel="stylesheet" type="text/css">
+
+<script language="javascript" src="js/detectFlash.js"></script>
+
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+
+<link rel="stylesheet" href="css/layout37.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css" />
+<script type="text/javascript" src="js/jquery.backstretch2.js"></script>
+<script type="text/javascript" src="js/jquery.ba-hashchange.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
+
+
+<!-- VIEW PORT RESET -->
+
+<script type="text/javascript">
+  (function() {
+    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+  })();
+</script>
+<script type="text/javascript" src="js/layout37.js"></script>
+<script type="text/javascript" src="js/ajaxpages.js"></script>
+<script src="js/all.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+function KinTest () {
+alert('success');
+}
+
+function Weather() {}
+
+function Countdown () {}
+
+function Montages () {
+
+ var allTags = document.getElementsByTagName('*');
+ for(i=0; i<allTags.length; i++){
+	      if(allTags[i].className == 'montagephotos photoalbumfirst') allTags[i].style.visibility = 'visible';
+  }
+}
+
+function LoadPhotoAlbums () {
+
+
+}
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+
+myArray = ['welcome','ourstory','proposal','ceremony','reception','honeymoon','guestbook','brideandgroom','thecouple','musicrequest','rsvp','puzzle','newlyweds','contacts','pollquiz','gift','weddingevents','calendar','directions','local','seatingchart','bridalparty','accommodations','photo','dedications','newsupdates','travel','familyfriends','otherinfo','vendors','videoaudio','thankyou','forbridesmaids','forgroomsmen','fromourhearts','faq','addressbook','downloads','thenandnow','blog','general1','general2','general3','general4','general5','general6','general7','general8','general9','general10','general11','general12','general13','general14','general15','general16','general17','general18','general19','general20','general21','general22','general23','general24','general25','general26','general27','general28','general29','general30','general31','general32','general33','general34','general35','general36','general37','general38','general39','general40','general41','general42','general43','general44','general45','general46','general47','general48','general49','general50'];
+$(function(){
+$(window).hashchange( function(){
+thehash= window.location.hash; 
+thehash=thehash.replace("#","");
+if (thehash!='FavoriteRestaurants' && thehash!='Weather' && thehash!='ThingstoDo' && thehash!='w' && thehash!='results' && thehash!='s' && thehash.indexOf("gbook")==-1 && thehash.indexOf("question")==-1 && thehash.indexOf("group")==-1) {
+if ($.inArray(thehash, myArray)>=0)  Page(thehash,253736,'','','','');
+else if(document.getElementById('backstretchintro') == null) {
+ ReloadIntro(253736);
+ $.backstretch(["http://images6.weddingwindow.com/images/37/photooption2type1.jpg"], {
+'target': backstretchintro,
+'duration': 5000,
+'fade': 1000,
+'centeredX': false,
+'positionType': 'absolute',
+'zIndex': 0
+});
+ 
+  }
+  }
+})
+
+// Trigger the event (useful on page load).
+
+$(window).hashchange();
+
+});
+
+
+var revealOnload = window.onload;
+window.onload = function () { if(revealOnload) revealOnload(); 
+ var allTags = document.getElementsByTagName('*');
+ for(i=0; i<allTags.length; i++){
+  if(allTags[i].className == 'introcouplenames') allTags[i].style.visibility = 'visible';
+  if(allTags[i].className == 'introweddingdate') allTags[i].style.visibility = 'visible';
+    if(allTags[i].className == 'montagephoto') allTags[i].style.visibility = 'visible';
+  if(allTags[i].className == 'entersite') allTags[i].style.visibility = 'visible';
+   introBGresize();
+
+  }
+}
+</script>
+
+
+
+
+
+<meta name="keywords" content="">
+<meta name="description" content="Wedding Website - Bryn and Markus">
+
+
+
+<META NAME="robots" CONTENT="index, follow">
+<META NAME="GOOGLEBOT" CONTENT="INDEX, FOLLOW">
+
+<meta name="format-detection" content="telephone=no">
+<meta name="copyright" content="Copyright 2014 Wedding Window">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+<!-- VIEW PORT RESET -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />-->
+<style type="text/css">#header h1, #header span, #monogram h1 { color: #FFFFFF; }
+#header h2 {  color: #FFFFFF; }
+#pagetitle, h2.groupheader, #pageback a, #pagenext a { color: #000000 !important;text-decoration: none !important }
+#nav ul li a, #header a#show, #header a#hide { color: #999999 !important; }
+#nav ul li a:hover { color: #FFFFFF !important; }
+#nav ul li a.unclickable:hover { color: #999999 !important; }
+#header a#show:hover, #header a#hide:hover, #header a#show:visited, #header a#hide:visited {
+color: #999999 !important;
+}
+.sitecenterentry:hover, .onmouseoverentry {
+border:2px dotted #333333 !important;
+}
+.pollbar {background-color:#000000;height:7px; }
+.button a input {color: #999999 !important; border:1px dotted #FFFFFF !important; }
+#mobilenav ul li { color: #2C2C2C !important; }
+#mobilenav ul li:hover { color: #808080 !important; }
+.submenutitle, .comment { border-bottom:1px dotted #000000; }
+#commentsbox {  border-top: 1px dotted #000000;float: left;width: 100%; }
+.copyright {
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF !important;
+	text-decoration: none;
+margin-top: 30px !important;
+line-height: 1.3;
+width: 200px;
+}
+a.copyrightlink {
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF !important;
+	text-decoration: none;
+line-height: 1.3;
+}
+#mobilefooter p, #mobilefooter p a{
+font-family: 'Lato', Arial, Helvetica, sans-serif;
+ color:#333333;
+text-decoration: none;
+}
+#mobilefooter{
+ border-top:1px solid #333333;
+}
+.sidebar0, .btn-inner0, .btn-outer0  {
+background-image: none !important;
+background-color:#FFFFFF !important;
+}
+.pic-frame, #header-image, .pic-frameguestbook, .graphicrule, .graphicrulebutton {
+border-bottom: 1px solid #000000;
+}
+#add-comment {
+border-top: 1px solid #000000;
+}
+input, textarea {
+border: 1px solid #000000;
+}
+.fancybox-inner {
+    background: none repeat scroll 0 0 #000000 !important;
+}
+#contentbg {
+background: url("http://images6.weddingwindow.com/customers/253736/newscheme868424-1.png") repeat;
+}
+#add-comments {
+background: url("http://images6.weddingwindow.com/customers/253736/newscheme868424-1.png") repeat;
+}
+#add-comment input, textarea {
+background: url("http://images6.weddingwindow.com/customers/253736/newscheme868424-1.png") repeat;
+}
+input, textarea {
+background: url("http://images6.weddingwindow.com/customers/253736/newscheme868424-1.png") repeat;
+}
+ .slides img, .photoalbumfirst img, .noresizeborder img {
+border:1px solid #000000;
+}
+</style>
+</head>
+<body link="#333333" vlink="#333333" alink="#333333"  class="welcome">
+<div id="iphonebg"></div>	
+<div id="wrapper" style="height: 568px; position: absolute; overflow: visible;">
+	<div id="pageinfo">
+		<div id="backstretchintro">
+			<div id="contentbg" style="display: none; height: 748px; width: 799px;">
+			</div>
+            <div id="guestbookbg" style="display:none">
+            </div>
+           <!-- <div id="mobilenavbg" style="display: none; left: -200px;"></div>
+            <div id="noscroll">
+            <div id="mobilenav" style="height: 568px; overflow: hidden; display: none; left: -200px;">
+
+<script>
+
+makeScrollable();
+	
+	</script>
+
+<ul>
+			
+<li class="mobilenavigationfont15" onclick="WebsiteHash('welcome')">Welcome</li>
+	
+<li class="mobilenavigationfont15" onclick="WebsiteHash('thecouple')">The Couple</li>
+		
+<li class="mobilenavigationfont15" onclick="WebsiteHash('ceremony')">Ceremony & Reception</li>
+	
+<li class="mobilenavigationfont15" onclick="WebsiteHash('travel')">Travel Information</li>
+
+<li class="mobilenavigationfont15" onclick="WebsiteHash('accommodations')">Accommodations</li>
+			
+<li class="mobilenavigationfont15" onclick="WebsiteHash('gift')">Gift Registry</li>
+	
+<li class="mobilenavigationfont15" onclick="WebsiteHash('rsvp')">RSVP</li>
+			
+<li class="mobilenavigationfont15" onclick="WebsiteHash('photo')">Photo Album</li>
+
+			</ul>
+</div> <!--closes noscroll -->
+<!--</div> --> <!--closes mobilenav -->
+
+	<div id="sidebar" class="sidebar1">
+			<div id="header" class="embellishment0-top">
+					<h1 id="firstname" class="couplenamefont15-5 ">Bryn</h1>
+				<span class="andtype1font15-5 ">and</span>
+				<h1 class="couplenamefont15-5 " id="secondname">Markus</h1>
+				<h2 class="weddingdatefont15-5  embellishment8-nav">April 4, 2015</h2>
+<a id="show" class="menufont15" onclick="showMobileNav()">Menu</a>
+				<a id="hide" class="menufont15" onclick="hideMobileNav()">Back</a>
+			</div> <!-- closes header div -->
+
+<div id="nav" style="margin-top: -30px">
+<ul class="normal-nav">
+
+<!--<li class="navigationfont15-5 ">
+<a href="index.html#welcome" id="nav1">Welcome</a>
+</li>-->
+
+<li class="navigationfont15-5 ">
+<a href="#" class="big-link" data-reveal-id="welcome" style="display:block" data-animation="fade">Welcome</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#thecouple" id="nav34">The Couple</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="#" class="big-link" data-reveal-id="ceremony" style="display:block" data-animation="fade">Ceremony & Reception</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#travel" id="nav24">Travel Information</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#accommodations" id="nav12">Accommodations</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#gift" id="nav14">Gift Registry</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#rsvp" id="nav16">RSVP</a>
+</li>
+
+<li class="navigationfont15-5 ">
+<a href="index.html#photo" id="nav18">Photo Album</a>
+</li>
+
+			
+</ul>
+</div> <!--closes sidebar-->
+
+
+	<div id="footer">
+		<!--<div id="monogram">
+<h1 class="monogramfont15" id="firstinitial">B</h1><span class="embellishment7-heart"></span><h1 id="second" class="monogramfont15">M</h1>
+			</div>
+			<div style="clear:both"></div>
+			<p class="copyright"><a href="http://www.weddingwindow.com" target="_blank" class="copyrightlink" title="Responsive Wedding Website by WeddingWindow.com">Responsive Wedding Websites</a> <br>by 
+			<a href="http://www.weddingwindow.com" target="_blank" class="copyrightlink">WeddingWindow.com</a> 
+			<br>© 2014 All Rights Reserved</p>
+			</div>-->
+</div>
+</div> <!--closes pageinfo-->
+</div> <!--closes backstretchintro-->
+
+
+<!--CONTENT -->
+
+
+<div id="mobilecontent">
+	<div id="welcome" class="reveal-modal">
+    <div class="contentcopy">
+        <!--<div id="header-image-intro"><img src="images/37/photooption3type0-stretch.png">
+        </div>
+        <div id="content-inner">Welcome
+        </div>-->
+        <p id="contentheader">Welcome to Bryn and Markus' <br />Wedding Website</p>
+        <p id="contentsubheader"></p>
+        <p><img src="images/37/photooption5type1-heart.png" width="32" height="29" alt=""/></p>
+        <div id="mobilefooter" style="display:none;border:none">
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+	</div> <!--closes content copy -->
+</div> <!--closes welcome -->
+
+<div id="ceremony" class="reveal-modal">
+    <div class="contentcopy">
+        <!--<div id="header-image-intro"><img src="images/37/photooption3type0-stretch.png">
+        </div>
+        <div id="content-inner">Welcome
+        </div>-->
+        <p id="contentheader">Ceremony & Reception</p>
+        <p id="image"><img src="images/metrobuilding_exteriorwsign.jpg" width="190" height="175" alt=""/></p>
+        <div id="contentsubheader"><p>Metropolitan Building&nbsp;&nbsp;&nbsp;<a href="http://www.metropolitanbuilding.com/" target="new">link</a><br />Long Island City, NY</p></div>
+         <div id="contentparagraph"><p>4401 11th St<br />
+Long Island City, NY 11101</p></div>
+        <p><img src="images/37/photooption5type1-heart.png" width="32" height="29" alt=""/></p>
+        <div id="mobilefooter" style="display:none;border:none">
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+	</div> <!--closes content copy -->
+</div> <!--closes ceremony/reception -->
+</div> <!-- closes mobilecontent -->
+
+<script>
+	if( $("#sidebar").width() == 211)
+	{
+		if(window.location.hash) {
+ } else {
+$.backstretch(["http://images6.weddingwindow.com/images/37/photooption2type1.jpg"], {
+'target': backstretchintro,
+'duration': 5000,
+'fade': 1000,
+'centeredX': false,
+'positionType': 'absolute',
+'zIndex': 0
+});
+}
+	}
+	else
+	{
+	if(window.location.hash) {
+ } else {
+$.backstretch(["http://images6.weddingwindow.com/images/37/photooption2type1.jpg"], {
+'target': backstretchintro,
+'duration': 5000,
+'fade': 1000,
+'centeredX': true,
+'positionType': 'absolute',
+'zIndex': 0
+});
+}
+	}
+</script>
+</div>
+</div>
+<!--<div style="display:none">
+<div id="kwlogo" style="display:none">
+<div class="left" id="kwlogocamera"><a href="http://kayshaweiner.com" target="_blank"><img src="images/37/camera.png" alt="" /></a></div><div id="kwlogoname"><a href="http://kayshaweiner.com" target="_blank">Kaysha Weiner Photographer</a></div>
+</div></div>
+<div style="display:none">
+<div id="whlogo">
+<div class="left" id="whlogocamera"><a href="http://whitehautephotography.com" target="_blank"><img src="images/37/camera.png" alt="" /></a></div><div id="whlogoname"><a href="http://whitehautephotography.com" target="_blank">White Haute Photography</a></div>
+</div>-->
+</div>
+</body>
+
+</html>
+
+
+<script language="javascript" src="ieupdate.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
